@@ -29,5 +29,8 @@ Project is created with:
 To run this project, download the github zip file and open it on a code editor. Then run it on the terminal with
 
 ```
-$ npm start
+$ git clone https://github.com/kellyhp/moment.git
+$ cd moments-film-prints
+$ npm install
+$ npm run dev
 ```
