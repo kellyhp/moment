@@ -2,19 +2,31 @@
 
 .button {
 
+  color: $color-button-background;
+  background-color: white;
+  text-decoration: none;
   font-size: 1em;
-  color: white;
-  background-color: $color-button-background;
-  border: 0;
-  font-weight: $font-weight-black;
-  font-family: inherit;
   text-transform: uppercase;
-  padding: .6em 1em;
-  border-radius: $border-radius-small;
+  font-family: inherit;
+  border-radius: 3px;
+  border: 2px solid $color-button-background;
+  padding: 1rem 2rem;
+  box-shadow: .9px 1px 0 0 $color-button-background, 1.5px 2px 0 0 $color-button-background, 2.5px 3px 0 0 $color-button-background,
+   3.5px 4px 0 0 $color-button-background, 4.5px 5px 0 0 $color-button-background, 5.5px 6px 0 0 $color-button-background,
+    6.5px 7px 0 0 $color-button-background, 7.5px 8px 0 0 $color-button-background, 8.5px 9px 0 0 $color-button-background,
+     9.5px 10px 0 0 $color-button-background;
+  position: relative;
+  inset: 0;
   cursor: pointer;
+  transform: rotateX(0), rotateY(0) rotateZ(0);
+  display: inline-block;
+  outline: 2px dashed transparent;
+  transition: all 300ms ease;
 
   &:hover {
-    background-color: lighten($color-button-background, 10);
+    inset: 6px 0 5.5px 0;
+    transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+    box-shadow: none;
   }
 
 }

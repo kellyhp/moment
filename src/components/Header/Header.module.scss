@@ -47,6 +47,7 @@
   padding: 0;
   margin: 0 2em;
 
+
   @media (max-width: 720px) {
     width: 100%;
     align-items: center;
@@ -71,6 +72,11 @@
 
   a {
     color: $color-header-links;
+    transition: color 0.3s ease;
+  }
+
+  a:hover{
+    color: white;
   }
 
 }
