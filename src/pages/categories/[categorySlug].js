@@ -5,7 +5,6 @@ import Header from '@components/Header';
 import Container from '@components/Container';
 import Button from '@components/Button';
 import Image from 'next/image';
-
 import styles from '@styles/Page.module.scss';
 
 import {
