@@ -44,7 +44,7 @@ export default function Home({home, products}) {
                 <h2>{heroTitle}</h2>
                 <p>{heroText}</p>
               </div>
-              <img className={styles.heroImage} width="100%" height="auto" object-fit="contain" src={heroBackground.url} alt="" />
+              <img className={styles.heroImage} width="100%" height="auto" object-fit="contain" loading="lazy" src={heroBackground.url} alt="" />
             </a>
           </Link>
         </div>
@@ -71,6 +71,7 @@ export default function Home({home, products}) {
                       <Image
                         loader={HygraphImageLoader}
                         src={product.image.url}
+                        loading="lazy"
                         width= "212px"
                         height= "320px"
                         objectFit="cover"

@@ -36,6 +36,7 @@ export default function Product({product}) {
             <Image
              loader={HygraphImageLoader}
              src={product.image.url}
+             loading="lazy"
              width= "424px"
              height= "640px"
              objectFit="cover"
