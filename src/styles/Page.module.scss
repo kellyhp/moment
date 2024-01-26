@@ -221,6 +221,7 @@
 }
 
 .storesMap {
+  z-index: 0;
   flex-grow: 1;
 
   @media (max-width: 840px) {

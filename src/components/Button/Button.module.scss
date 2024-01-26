@@ -1,7 +1,6 @@
 @import "@styles/settings/__settings";
 
 .button {
-
   color: $color-button-background;
   background-color: white;
   text-decoration: none;
@@ -17,6 +16,7 @@
      9.5px 10px 0 0 $color-button-background;
   position: relative;
   inset: 0;
+  z-index: 0;
   cursor: pointer;
   transform: rotateX(0), rotateY(0) rotateZ(0);
   display: inline-block;
